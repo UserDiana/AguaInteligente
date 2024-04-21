@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Consumo de Agua</title>
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Se agrega la referencia a Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="Imagen/prueba.png"  width="70" height="80">
+      <!-- <a class="navbar-brand" href="#">
+
+         <img src=".png" alt="Bootstrap" width="30" height="24" > -->
+      </a>
+    </div>
+
+    <div>
+
+      <h1>Consumo de Agua</h1>
+
+    </div>
+
+  </header>
+  
+  <div class="container">
+    <div class="left-panel">
+      <h2>Consumo de Agua</h2>
+      <br>
+      <form>
+        <label for="fecha">Seleccionar Fecha:</label>
+        <br>
+        <br>
+        <input type="date" id="fecha" name="fecha" onchange="generarDatos()">
+        <br>
+        <br>
+        <br>
+        <br>
+        <label for="visualizacion">Forma de Visualización:</label>
+        <br>
+        <br>
+        <select id="visualizacion" name="visualizacion" onchange="mostrarVisualizacion()">
+          <option value="tabla">Tabla</option>
+          <option value="grafica">Gráfica de Pastel</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="generarReporte()">Reporte</button>
+      </form>
+    </div>
+    <div class="right-panel">
+
+
+      <h2 id="visualizacion-titulo">Visualización</h2>
+
+
+
+        <!-- Aquí se insertará la tabla o la gráfica de pastel -->
+        <div id="grafica" class="centered">
+
+
+        
+
+    </div>
+  </div>
+
+
+
+
+
+  <footer>
+    <div class="footer-column " >
+      <br>
+      <i class="fas fa-lock fa-2x" style="color: rgb(255, 255, 255); font-size: 25px;margin-bottom: 1px;" ></i>
+      <h3 style="margin-top: 7px; font-size: 15px;  ">Aviso de Privacidad</h3>
+  </div>
+
+
+  <div class="footer-column">
+    <i class="bi bi-shield-lock-fill"></i>
+    <h3 style="margin-top: 7px; font-size: 15px;">Sistemas Vanguardistas de México</h3>
+</div>
+
+
+<div class="footer-column " >
+  <br>
+  <i class="fas fa-lock fa-2x" style="color: rgb(255, 255, 255); font-size: 25px;margin-bottom: 1px;" ></i>
+  <h3 style="margin-top: 7px; font-size: 15px;">Términos de Uso</h3>
+</div>
+
+
+  </footer>
+  <script src="script.js"></script>
+
+  
+</body>
+</html>
