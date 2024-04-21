@@ -10,3 +10,18 @@ body {
     padding: 20px;/*Aquí es para hacer más chico dentro de*/
   
   }
+
+  .left-panel {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  
+  }
+  /*Aquí modifiqué los bordes de mi visualización*/
+  .right-panel {
+    width: 45%;
+    padding: 50px;
+    border: 1px solid #ccc;
+    height: 430px;
+  }
+  
